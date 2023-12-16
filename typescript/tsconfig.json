@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "outDir": "temp",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowJs": true,
+    "rootDir": ".",
+    "paths": {
+      // TODO:
+    }
+  },
+  "include": [
+    // "src", // TODO:
+    // "packages/**/src/*.ts", // TODO:
+    "examples",
+  ]
+}

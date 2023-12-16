@@ -1,0 +1,30 @@
+{
+  "name": "TODO:",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "TODO:",
+  "main": "TODO:",
+  "scripts": {
+    "build": "pnpm run bundle && pnpm run build:dts",
+    "bundle": "node scripts/build.js",
+    "build:dts": "rm -rf temp && tsc -p tsconfig.build.json && node scripts/dts.js && rm -rf temp",
+    "fmt": "prettier",
+    "lint": "ESLINT_USE_FLAT_CONFIG=true eslint"
+  },
+  "keywords": [],
+  "author": "Ubugeeei <ubuge1122@gmail.com>",
+  "license": "MIT",
+  "volta": {
+    "node": "20.10.0",
+    "pnpm": "8.12.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.4",
+    "esbuild": "^0.19.9",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.1.1",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.3.3"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "cSpell.words": [
+    "biomejs",
+    "oxlint",
+    "tsenvar"
+  ],
+  "[typescript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  // NOTE: disable default formatter for json
+  "[json]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+}

@@ -6,7 +6,7 @@
   "main": "TODO:",
   "scripts": {
     "build": "tsx build",
-    "fmt": "prettier",
+    "fmt": "npx @biomejs/biome format .",
     "lint": "oxlint"
   },
   "keywords": [],
@@ -21,7 +21,6 @@
     "dts-bundle": "^0.7.3",
     "esbuild": "^0.19.9",
     "oxlint": "latest",
-    "prettier": "^3.1.1",
     "rimraf": "^5.0.5",
     "tsx": "^4.6.2",
     "typescript": "^5.3.3"

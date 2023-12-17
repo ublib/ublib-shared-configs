@@ -1,17 +1,24 @@
 {
   "name": "TODO:",
   "version": "0.0.1",
+  "author": "Ubugeeei <ubuge1122@gmail.com>",
+  "license": "MIT",
   "type": "module",
   "description": "TODO:",
   "main": "TODO:",
+  "keywords": ["TODO:"],
   "scripts": {
     "build": "tsx build",
     "fmt": "npx @biomejs/biome format .",
-    "lint": "oxlint"
+    "lint": "oxlint",
+    "prepare": "husky install"
   },
-  "keywords": [],
-  "author": "Ubugeeei <ubuge1122@gmail.com>",
-  "license": "MIT",
+  "lint-staged": {
+    "*": [
+      "pnpm run fmt",
+      "pnpm run lint"
+    ]
+  },
   "volta": {
     "node": "20.10.0",
     "pnpm": "8.12.1"

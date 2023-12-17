@@ -7,7 +7,7 @@
   "scripts": {
     "build": "tsx build",
     "fmt": "prettier",
-    "lint": "ESLINT_USE_FLAT_CONFIG=true eslint"
+    "lint": "oxlint"
   },
   "keywords": [],
   "author": "Ubugeeei <ubuge1122@gmail.com>",
@@ -20,8 +20,7 @@
     "@types/node": "^20.10.4",
     "dts-bundle": "^0.7.3",
     "esbuild": "^0.19.9",
-    "eslint": "^8.56.0",
-    "eslint-config-prettier": "^9.1.0",
+    "oxlint": "latest",
     "prettier": "^3.1.1",
     "rimraf": "^5.0.5",
     "tsx": "^4.6.2",

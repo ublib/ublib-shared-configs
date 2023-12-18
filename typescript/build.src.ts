@@ -4,11 +4,10 @@ import { execSync } from "node:child_process";
 import { build } from "esbuild";
 import { rimraf } from "rimraf";
 import { bundle } from "dts-bundle";
+import { t } from "chainsi";
 
-const blue = (str: string) => `\x1b[34m${str}\x1b[0m`;
-const green = (str: string) => `\x1b[32m${str}\x1b[0m`;
-
-const finishedBuild = (dir: string) => console.log(`${green("✔︎")} build: ${blue(dir)}`);
+const finishedBuild = (dir: string) =>
+  console.log(`${t("✔︎").green._} build: ${t(dir).black._}`);
 
 export const buildMain = async () => {
   execSync("tsc -p tsconfig.build.json");
@@ -19,7 +18,7 @@ export const buildMain = async () => {
     minify: true,
     target: "es2018",
     outdir: `dist`,
-    external: [], // TODO
+    external: [], // TODO:
     format: "esm",
     plugins: [
       {
@@ -27,6 +26,7 @@ export const buildMain = async () => {
         setup(build: any) {
           build.onEnd(() => {
             bundle({
+              name: "", // TODO:
               main: `temp/src/index.d.ts`,
               out: path.resolve(`dist/index.d.ts`),
             });
@@ -44,7 +44,7 @@ export const clearMain = () => rimraf("dist");
 await (async function main() {
   console.log("clear dist...");
   await Promise.allSettled([clearMain()]);
-  console.log(`${green("✔︎")} finished clearing dist`);
+  console.log(`${t("✔︎").green._} finished clearing dist`);
   console.log("building...");
   const buildingMain = buildMain();
   await Promise.all([buildingMain]);

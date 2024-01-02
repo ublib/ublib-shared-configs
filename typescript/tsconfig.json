@@ -11,7 +11,13 @@
     "allowJs": true,
     "rootDir": ".",
     "paths": {
-      // TODO:
+      // TODO: package-name
+      "@package-name/*": [
+        "./packages/*/src"
+      ],
+      "package-name": [
+        "./packages/package-name/src"
+      ],
     }
   },
   "include": [

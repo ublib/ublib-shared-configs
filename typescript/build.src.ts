@@ -7,7 +7,7 @@ import { bundle } from "dts-bundle";
 import { t } from "chainsi";
 
 const finishedBuild = (dir: string) =>
-  console.log(`${t("✔︎").green._} build: ${t(dir).black._}`);
+  console.log(`${t("✔︎").green._} build: ${t(dir).blue._}`);
 
 export const buildMain = async () => {
   execSync("tsc -p tsconfig.build.json");

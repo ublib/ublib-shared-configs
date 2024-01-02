@@ -32,7 +32,7 @@ export const buildMain = () => {
             build.onEnd(() => {
               bundle({
                 name: pkg,
-                main: `temp/${pkg}/src/index.d.ts`,
+                main: `temp/packages/${pkg}/src/index.d.ts`,
                 out: path.resolve(`packages/${pkg}/dist/index.d.ts`),
               });
             });

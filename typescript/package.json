@@ -25,15 +25,5 @@
     "node": "20.10.0",
     "pnpm": "8.12.1"
   },
-  "devDependencies": {
-    "@types/dts-bundle": "^0.0.35",
-    "@types/node": "^20.10.4",
-    "chainsi": "^0.0.1",
-    "dts-bundle": "^0.7.3",
-    "esbuild": "^0.19.9",
-    "oxlint": "latest",
-    "rimraf": "^5.0.5",
-    "tsx": "^4.6.2",
-    "typescript": "^5.3.3"
-  }
+  "devDependencies": {}
 }

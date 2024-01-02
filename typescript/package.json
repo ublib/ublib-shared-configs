@@ -15,6 +15,11 @@
     "lint": "oxlint",
     "prepare": "husky install"
   },
+  "config": {
+    "commitizen": {
+      "path": "git-cz"
+    }
+  },
   "lint-staged": {
     "*": [
       "pnpm run fmt",

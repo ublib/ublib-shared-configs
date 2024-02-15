@@ -13,6 +13,7 @@
     "build": "tsx build",
     "fmt": "biome format .",
     "lint": "oxlint",
+    "test": "vitest",
     "prepare": "husky install"
   },
   "config": {

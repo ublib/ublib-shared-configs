@@ -4,4 +4,4 @@
 # pnpm install
 
 # dev dependencies
-pnpm install -Dw @biomejs/biome @types/dts-bundle @types/node chainsi dts-bundle esbuild husky oxlint rimraf tsx typescript vitest
+pnpm install -Dw @antfu/eslint-config eslint @types/dts-bundle @types/node chainsi dts-bundle esbuild husky oxlint rimraf tsx typescript vitest

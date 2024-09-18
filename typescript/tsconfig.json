@@ -1,15 +1,9 @@
 {
   "compilerOptions": {
     "target": "ESNext",
+    "rootDir": ".",
     "module": "ESNext",
     "moduleResolution": "node",
-    "outDir": "temp",
-    "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "allowJs": true,
-    "rootDir": ".",
     "paths": {
       // TODO: package-name
       "@package-name/*": [
@@ -17,12 +11,18 @@
       ],
       "package-name": [
         "./packages/package-name/src"
-      ],
-    }
+      ]
+    },
+    "allowJs": true,
+    "strict": true,
+    "outDir": "temp",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true
   },
   "include": [
     // "src", // TODO:
     // "packages/**/src/*.ts", // TODO:
-    "examples",
+    "examples"
   ]
 }

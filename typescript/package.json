@@ -1,18 +1,19 @@
 {
   "name": "TODO:",
-  "version": "0.0.1",
-  "author": "Ubugeeei <ubuge1122@gmail.com>",
-  "license": "MIT",
   "type": "module",
+  "version": "0.0.1",
+  "packageManager": "pnpm@9.10.0",
   "description": "TODO:",
-  "main": "TODO:",
+  "author": "ubugeeei",
+  "license": "MIT",
   "keywords": [
     "TODO:"
   ],
+  "main": "TODO:",
   "scripts": {
     "build": "tsx build",
-    "fmt": "biome format .",
-    "lint": "oxlint",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "test": "vitest",
     "prepare": "husky install"
   },
@@ -26,10 +27,5 @@
       "pnpm run fmt",
       "pnpm run lint"
     ]
-  },
-  "volta": {
-    "node": "20.10.0",
-    "pnpm": "8.12.1"
-  },
-  "devDependencies": {}
+  }
 }
